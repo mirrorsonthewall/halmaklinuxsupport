@@ -14,21 +14,23 @@ It should now be available in the top right hand corner of your menu, a drop-dow
   
 <h1> Troubleshooting (And Notes) </h1>
 
-A. In step 3, I got the file from [this link](http://people.uleth.ca/~daniel.odonnell/Blog/custom-keyboard-in-linuxx11#e) which was basically what I used to figure out how to create the layout (if you want to check the steps); [this Ubuntu guide](https://help.ubuntu.com/community/Custom%20keyboard%20layout%20definitions) was also helpful.
+A. Steps 4 and 5 might need to be flipped, I don't remember (you may need to restart again after #5, but I don't think so).
 
-B. I skipped one of the steps of updating xorg.lst (it was an optional step on the first link).
+B. In step 3, I got the file from [this link](http://people.uleth.ca/~daniel.odonnell/Blog/custom-keyboard-in-linuxx11#e) which was basically what I used to figure out how to create the layout (if you want to check the steps); [this Ubuntu guide](https://help.ubuntu.com/community/Custom%20keyboard%20layout%20definitions) was also helpful.
 
-C. You could probably copy the "zz" file's contents and paste it in the "en" file and it should still show up, if you don't want "zz" to show up (it should appear as "en" in your top right corner).
+C. I skipped one of the steps of updating xorg.lst (it was an optional step on the first link).
 
-D. This might work for any system using xkb?
+D. You could probably copy the "zz" file's contents and paste it in the "en" file and it should still show up, if you don't want "zz" to show up (it should appear as "en" in your top right corner).
 
-E. The default keyboard shortcuts for switching between keyboard layouts is Shift+Super+Space (to go to the previous layout) and Super+Space (to shift to the next layout in order). If you want to change this, you can go to Settings -> Devices -> Keyboard Shortcuts (then scroll to "Typing" section).
+E. This might work for any system using xkb?
 
-F. I used Colemak's mappings as the base when I switched the keys to Halmak's layout, so third and fourth layers might work with the same mappings; of important note is that I left the CAPS lock as a Backspace key, which isn't specififed in the default Halmak layout. This could be changed probably pretty easily by editing the "zz" file, then going to the "CAPS" line and changing the codes on the line, but I don't know what the code is for CAPS lock.
+F. The default keyboard shortcuts for switching between keyboard layouts is Shift+Super+Space (to go to the previous layout) and Super+Space (to shift to the next layout in order). If you want to change this, you can go to Settings -> Devices -> Keyboard Shortcuts (then scroll to "Typing" section).
 
-G. For learning a layout, I find it helpful on a second screen (or smartphone) to pull up the layout to look at while typing and memorizing on some kind of typing test like typeracer.com.
+G. I used Colemak's mappings as the base when I switched the keys to Halmak's layout, so third and fourth layers might work with the same mappings; of important note is that I left the CAPS lock as a Backspace key, which isn't specififed in the default Halmak layout. This could be changed probably pretty easily by editing the "zz" file, then going to the "CAPS" line and changing the codes on the line, but I don't know what the code is for CAPS lock.
 
-H. If you'd like to try to create a custom layout of your own, you just need to go to the "zz" file for instance and switch around the values of the keys. I don't know what all the codes are for the keys, but you can get some ideas by finding other codes in the files in the /usr/share/X11/xkb/symbols/ folder.
+H. For learning a layout, I find it helpful on a second screen (or smartphone) to pull up the layout to look at while typing and memorizing on some kind of typing test like typeracer.com.
+
+I. If you'd like to try to create a custom layout of your own, you just need to go to the "zz" file for instance and switch around the values of the keys. I don't know what all the codes are for the keys, but you can get some ideas by finding other codes in the files in the /usr/share/X11/xkb/symbols/ folder.
 
 <h1> Happy Typing! </h1>
 
