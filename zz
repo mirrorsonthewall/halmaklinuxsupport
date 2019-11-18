@@ -1,0 +1,90 @@
+// Colemak symbols for xkb on X.Org Server 7.x
+// 2006-01-01 Shai Coleman, http://colemak.com/
+
+partial alphanumeric_keys
+xkb_symbols "basic" {
+
+    key <TLDE> { [        grave,   asciitilde,      dead_tilde,       asciitilde ] };
+    key <AE01> { [            1,       exclam,      exclamdown,      onesuperior ] };
+    key <AE02> { [            2,           at,       masculine,      twosuperior ] };
+    key <AE03> { [            3,   numbersign,     ordfeminine,    threesuperior ] };
+    key <AE04> { [            4,       dollar,            cent,         sterling ] };
+    key <AE05> { [            5,      percent,        EuroSign,              yen ] };
+    key <AE06> { [            6,  asciicircum,         hstroke,          Hstroke ] };
+    key <AE07> { [            7,    ampersand,             eth,              ETH ] };
+    key <AE08> { [            8,     asterisk,           thorn,            THORN ] };
+    key <AE09> { [            9,    parenleft,  leftsinglequotemark,  leftdoublequotemark ] };
+    key <AE10> { [            0,   parenright, rightsinglequotemark,  rightdoublequotemark ] };
+    key <AE11> { [        minus,   underscore,          endash,           emdash ] };
+    key <AE12> { [        equal,         plus,        multiply,         division ] };
+
+    key <AD01> { [            w,            W,      adiaeresis,       Adiaeresis ] };
+    key <AD02> { [            l,            L,           aring,            Aring ] };
+    key <AD03> { [            r,            R,          atilde,           Atilde ] };
+    key <AD04> { [            b,            B,          oslash,         Ooblique ] };
+    key <AD05> { [            z,            Z,     dead_ogonek,       asciitilde ] };
+    key <AD06> { [    semicolon,        colon,         dstroke,          Dstroke ] };
+    key <AD07> { [            q,            Q,         lstroke,          Lstroke ] };
+    key <AD08> { [            u,            U,          uacute,           Uacute ] };
+    key <AD09> { [            d,            D,      udiaeresis,       Udiaeresis ] };
+    key <AD10> { [            j,            J,      odiaeresis,       Odiaeresis ] };
+    key <AD11> { [  bracketleft,    braceleft,   guillemotleft,        0x1002039 ] };
+    key <AD12> { [ bracketright,   braceright,  guillemotright,        0x100203a ] };
+    key <BKSL> { [    backslash,          bar,      asciitilde,       asciitilde ] };
+
+    key <AC01> { [            s,            S,          aacute,           Aacute ] };
+    key <AC02> { [            h,            H,      dead_grave,       asciitilde ] };
+    key <AC03> { [            n,            N,          ssharp,        0x1001e9e ] };
+    key <AC04> { [            t,            T,      dead_acute, dead_doubleacute ] };
+    key <AC05> { [        comma,         less,  dead_diaeresis,       asciitilde ] };
+    key <AC06> { [       period,      greater,      dead_caron,       asciitilde ] };
+    key <AC07> { [            a,            A,          ntilde,           Ntilde ] };
+    key <AC08> { [            e,            E,          eacute,           Eacute ] };
+    key <AC09> { [            o,            O,          iacute,           Iacute ] };
+    key <AC10> { [            i,            I,          oacute,           Oacute ] };
+    key <AC11> { [   apostrophe,     quotedbl,          otilde,           Otilde ] };
+
+    key <AB01> { [            f,            F,              ae,               AE ] };
+    key <AB02> { [            m,            M, dead_circumflex,       asciitilde ] };
+    key <AB03> { [            v,            V,        ccedilla,         Ccedilla ] };
+    key <AB04> { [            c,            C,              oe,               OE ] };
+    key <AB05> { [        slash,     question,      dead_breve,       asciitilde ] };
+    key <AB06> { [            g,            G,  dead_abovering,       asciitilde ] };
+    key <AB07> { [            p,            P,     dead_macron,       asciitilde ] };
+    key <AB08> { [            x,            X,    dead_cedilla,       asciitilde ] };
+    key <AB09> { [            k,            K,   dead_abovedot,       asciitilde ] };
+    key <AB10> { [            y,            Y,    questiondown,       asciitilde ] };
+
+    key <CAPS> { [    BackSpace,    BackSpace,       BackSpace,        BackSpace ] };
+    key <LSGT> { [        minus,   underscore,          endash,           emdash ] };
+    key <SPCE> { [        space,        space,           space,     nobreakspace ] };
+
+    include "level3(ralt_switch)"
+};
+
+// Halmak?
+
+partial alphanumeric_keys
+xkb_symbols "altgr-intl" {
+
+// five dead keys moved into level3:
+
+   key <TLDE> { [    grave, asciitilde,  dead_grave,   dead_tilde      ] };
+   key <AC11> { [apostrophe,quotedbl,    dead_acute,   dead_diaeresis  ] };
+
+// diversions from the MS Intl keyboard:
+
+   key <AE01> { [        1, exclam,      onesuperior,  exclamdown      ] };
+   key <AD04> { [        r, R,           ediaeresis,   Ediaeresis      ] };
+   key <AC07> { [        j, J,           idiaeresis,   Idiaeresis      ] };
+   key <AB02> { [        x, X,           oe,           OE              ] };
+   key <AB04> { [        v, V,           registered,   registered      ] };
+
+// onequarter etc (not in iso8859-15) moved to get three unshifted deadkeys:
+
+   key <AE06> { [        6, asciicircum, dead_circumflex, onequarter    ] };
+   key <AE07> { [        7, ampersand,   dead_horn,       onehalf       ] };
+   key <AE08> { [        8, asterisk,    dead_ogonek,     threequarters ] };
+
+   include "level3(ralt_switch)"
+};
