@@ -28,6 +28,8 @@ F. I used Colemak's mappings as the base when I switched the keys to Halmak's la
 
 G. For learning a layout, I find it helpful on a second screen (or smartphone) to pull up the layout to look at while typing and memorizing on some kind of typing test like typeracer.com.
 
+H. If you'd like to try to create a custom layout of your own, you just need to go to the "zz" file for instance and switch around the values of the keys. I don't know what all the codes are for the keys, but you can get some ideas by finding other codes in the files in the /usr/share/X11/xkb/symbols/ folder.
+
 <h1> Happy Typing! </h1>
 
 Let me know if anything needs to be adjusted!
